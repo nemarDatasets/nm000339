@@ -1,5 +1,5 @@
 {
-  "Name": "Stieger et al. 2021 — Motor Imagery EEG dataset",
+  "Name": "Stieger et al. 2021 — Continuous sensorimotor rhythm based brain computer interface learning in a large population",
   "BIDSVersion": "1.9.0",
   "HEDVersion": "8.4.0",
   "DatasetType": "derivative",
