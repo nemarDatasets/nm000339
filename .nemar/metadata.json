@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
+  "title": "Stieger et al. 2021 — Continuous sensorimotor rhythm based brain computer interface learning in a large population",
+  "description": "A large longitudinal dataset of sensorimotor rhythm-based brain-computer interface (BCI) training in 62 healthy adults. The dataset comprises over 600 hours of EEG recordings across 598 sessions with more than 250,000 trials of motor imagery tasks (left hand, right hand, both hands, and rest), collected during online continuous BCI control across 7-11 training sessions per participant. This resource enables investigation of BCI learning dynamics and algorithm development for non-invasive neural control applications.",
+  "methods_description": "Participants completed 7-11 online BCI training sessions, each consisting of 450 trials across 3 tasks (left-right, up-down, 2D) with 6 runs. Each trial included a 2-second inter-trial interval, 2-second target presentation, and up to 6-second feedback control period. EEG was recorded from 62 channels at 1000 Hz using Neuroscan SynAmps RT amplifiers with a 10-10 montage. Online control employed spatial filtering (Laplacian around C3/C4), autoregressive spectral estimation (order 16), and alpha power (12 Hz ± 1.5 Hz) for generating control signals, with cursor position updated every 40 ms.",
+  "license": "CC-BY-NC-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "James R. Stieger": {},
     "Stephen A. Engel": {},
@@ -8,6 +13,28 @@
       "orcid": "0000-0003-2944-8602"
     }
   },
+  "keywords": [
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "sensorimotor rhythm"
+    },
+    {
+      "term": "learning"
+    },
+    {
+      "term": "neural decoding"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1038/s41597-021-00883-1",
@@ -25,11 +52,6 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000339",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.21105/joss.01896",
       "identifier_type": "DOI",
       "relation_type": "References"
@@ -38,6 +60,11 @@
       "identifier": "10.1038/s41597-019-0104-8",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000339",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -62,54 +89,22 @@
       "award_number": "EB029354"
     }
   ],
-  "title": "Stieger et al. 2021 — Continuous sensorimotor rhythm based brain computer interface learning in a large population",
-  "license": "CC-BY-NC-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "398.8 GB (599 files)"
+    "775.7 GB (1197 files)"
   ],
   "formats": [
     ".bdf",
     ".json",
+    ".mat",
     ".md",
     ".tsv",
     ".yaml",
     ".yml"
   ],
-  "description": "A large-scale longitudinal dataset of sensorimotor rhythm-based brain-computer interface (BCI) training in 62 healthy adults. The dataset comprises over 600 hours of EEG recordings across 598 sessions with more than 250,000 trials of motor imagery tasks (left hand, right hand, both hands, and rest), collected during online continuous BCI control across up to 11 training sessions per participant. This resource enables investigation of BCI learning dynamics and algorithm development for non-invasive neural control applications.",
-  "methods_description": "Participants completed 7-11 online BCI training sessions, each consisting of 450 trials across 3 tasks (left-right, up-down, 2D) with 6 runs. EEG was recorded from 62 channels using Neuroscan SynAmps RT amplifiers at 1000 Hz sampling rate with 0.1-200 Hz bandpass and 60 Hz notch filtering. Online control employed spatial filtering (Laplacian around C3/C4), autoregressive spectral estimation (order 16), and alpha power (12 ± 1.5 Hz) for decoding. Horizontal cursor motion was controlled by lateralized alpha power (C4-C3) and vertical motion by total alpha power (C4+C3), with control signals normalized and updated every 40 ms.",
-  "keywords": [
-    {
-      "term": "Brain-Computer Interfaces",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "sensorimotor rhythm"
-    },
-    {
-      "term": "Canadian Longitudinal Study on Aging",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000099144"
-    },
-    {
-      "term": "learning"
-    },
-    {
-      "term": "alpha oscillations"
-    }
-  ],
-  "source_hash": "21b9bedb4e17ef70f6719ca296489f1104a1f90a1f98bb07ee95aa1c0114c6f8"
+  "source_hash": "c86e5a665dcf8940ed1ba82fc831d02763f9e6640413858f8b3979d6939c68dd"
 }
